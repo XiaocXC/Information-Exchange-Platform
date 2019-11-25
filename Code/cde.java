@@ -2,7 +2,7 @@
 public void login(String ID,String password,Stage stage){
         if(ID.length()==10){
             System.out.println("账号为学生");
-            controller=new Teacher_Controller();
+            controller=new Student_Controller();
             int status=controller.LoginC(ID,password);
             if(status==1){
                 System.out.println("学生登录成功！");
