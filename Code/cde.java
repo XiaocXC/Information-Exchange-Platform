@@ -22,7 +22,7 @@ public void login(String ID,String password,Stage stage){
         }else if(ID.length()==6){
             System.out.println("账号为老师");
             controller=new Teacher_Controller();
-            int status=controller.LoginC(ID);
+            int status=controller.LoginC(ID,password);
             if(status==1){
                 if(remember_id.isSelected())
                     USERINFO.put(ID,password);
