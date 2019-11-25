@@ -1,5 +1,5 @@
 //登录验证的函数
-public void login(String ID,String password,Stage stage){
+public void login(String ID,String password,Stage stage)throws Exception{
         if(ID.length()==10){
             System.out.println("账号为学生");
             controller=new Student_Controller();
