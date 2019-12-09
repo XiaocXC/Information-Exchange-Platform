@@ -29,7 +29,7 @@ public void login(String ID,String password,Stage stage){
                 writeUSERINFO();
                 System.out.println("教师登录成功！");
                 Main_View main_view = new Main_View();
-                main_view.show(stage);
+                main_view.show(stag);
             }else if(status==0)
                 showDialog(Alert.AlertType.ERROR,"失败","登录失败。账号或密码错误","ERROR:Fail to Login.Password or Account is wrong!");
             else if(status==-1)
