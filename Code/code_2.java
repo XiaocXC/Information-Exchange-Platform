@@ -35,5 +35,6 @@ public void login(String ID,String password,Stage stage){
                 showDialog(Alert.AlertType.ERROR,"失败","登录失败。该账号已经登录","ERROR:Fail to Login.This Account is already logined!");
             else if(status==-2)
                 showDialog(Alert.AlertType.ERROR,"失败","出现异常，请重试","ERROR:Some Exceptions are happened!Please Retry!");
-        }
+        }else
+            showDialog(Alert.AlertType.ERROR,"失败","账号非老师或学生账号","ERROR:Your Input isn't Effective Account.");
     }
