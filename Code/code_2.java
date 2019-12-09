@@ -16,6 +16,8 @@ public void login(String ID,String password,Stage stage){
                 showDialog(Alert.AlertType.ERROR,"失败","登录失败。账号或密码错误","ERROR:Fail to Login.Password or Account is Wrong!");
             else if(status==-1)
                 showDialog(Alert.AlertType.ERROR,"失败","登录失败。该账号已经登录","ERROR:Fail to Login.This Account is Already Logined!");
+            else if(status==-2)
+                showDialog(Alert.AlertType.ERROR,"失败","出现异常，请重试","ERROR:Some Exceptions are Happened!Please Retry!");
         }else if(ID.length()==6){
             System.out.println("账号为老师");
             controller=new Teacher_Controller();
